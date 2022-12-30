@@ -1,0 +1,63 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+  margin-top: 2.75em;
+  background: maroon;
+  padding: 1.4em 0;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: #ffffff33 0 0  6px;
+}
+
+.Title {
+  font-size: 3.2em;
+}
+
+.ContractAddress {
+  line-height: 1.3em;
+  margin: 1em 0 0 0.3em;
+  color: #00000077;
+}
+
+.ContractAddress > a,
+.ContractAddress > a:visited {
+  color: #00000077;
+  text-decoration: none;
+}
+.ContractAddress > a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .Title {
+    font-size: 2.6em;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .Header {
+    margin-top: 0;
+    padding-top: 4.6em;
+  }
+
+  .Title {
+    margin-top: .4em;
+    font-size: 2.2em;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .Title {
+    margin-top: .4em;
+    font-size: 1.8em;
+  }
+
+  .ContractAddress {
+    padding-top: 1em;
+    font-size: .8em;
+  }
+}

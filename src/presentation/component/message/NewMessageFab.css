@@ -1,0 +1,19 @@
+.NewMessageFab {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    padding: 1em 1.2em;
+    border-radius: 2em;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: white;
+    background-color: red;
+    opacity: .7;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.NewMessageFab:hover {
+    opacity: 1;
+    transition: 0;
+}

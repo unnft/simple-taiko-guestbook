@@ -1,0 +1,86 @@
+.Message {
+    background-color: #fff;
+    border: 1px solid #13137322;
+    display: flex;
+    padding: 1em;
+    margin-bottom: .3em;
+    margin-left: .7em;
+    margin-right: .7em;
+    border-radius: .14em;
+    transition: 1s;
+}
+
+.Message-Pending {
+    animation: loading 3s infinite;
+    background-color: #aabbff55;
+}
+
+.Message:hover {
+    transition: 0;
+    border: 1px solid #13137399;
+}
+
+.Message:first-child {
+    margin-top: 1.4em;
+}
+
+.Message:last-child {
+    margin-bottom: 1em;
+}
+
+.Message>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1em;
+}
+
+.sender {
+    font-family: 'Courier New', Courier, monospace;
+    padding: .3em 1em .7em;
+    font-weight: bold;
+    color: #444;
+    font-size: .66em;
+}
+
+.sender>a:link {
+    color: #444;
+}
+
+.sender>a:visited {
+    color: #444;
+}
+
+.sender>em {
+    font-style: italic;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.message {
+    font-size: .8em;
+    color: #131373;
+    padding: 0 1em;
+    margin-top: .7em;
+}
+
+@keyframes loading {
+    0% {
+        opacity: .7;
+    }
+
+    50% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: .7;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Message {
+        flex-direction: column;
+        padding: .4em 0;
+    }
+}

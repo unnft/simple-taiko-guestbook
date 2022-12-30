@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  padding: 0.5em 0;
+  overflow: hidden;
+  width: 90%;
+  margin-left: 5%;
+  align-self: center;
+}
+
+.Button {
+  background-color: 'red';
+  padding: .5em;
+  border-radius: .2em;
+  align-self: center;
+}
+
+.Connect {
+  display: inline-block;
+  width: 200px;
+  margin-top: 0.4em;
+  align-self: center;
+  background: red;
+}
+
+@media screen and (max-width: 540px) {
+  .App {
+    width: 100%;
+    margin-left: 0;
+  }
+}
